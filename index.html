@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scedule</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 jumbotron text">
+				<h1>Metro Train</h1>
+			</div>
+			
+                <div class="col-sm-12 table-responsive">          
+					  <table class="table" id="trainT">
+					  	<tr><h2 class="th te">Current Train Scedule</h2></tr>
+					  	<thead >
+					  		
+					  	
+					      <tr>
+					        
+					        <th>Train Name</th>
+					        <th>Destination</th>
+					        <th>Frequency (min)</th>
+					        <th>New Arrival</th>
+					        <th>Mins away</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        
+					        <td>Trenton Express</td>
+					        <td>Trenton</td>
+					        <td>25</td>
+					        <td>5:35 pm</td>
+					        <td>10</td>
+					      </tr>
+					    </tbody>
+					  </table>
+			</div>
+			<div class="col-sm-12">
+				<form class="table te">
+					<h2 class="th">Current Train Scedule</h2>
+					    <div class="form-group">
+					      <label for="trainName">Train Name</label>
+					      <input type="text" class="form-control" id="trainName" placeholder="Train Name" name="trainName">
+					    </div>
+					    <div class="form-group">
+					      <label for="destination">Destination</label>
+					      <input type="text" class="form-control" id="destination" placeholder="Destination" name="destination">
+					    </div>
+					    <div class="form-group">
+					      <label for="frequency">Frequency (min)</label>
+					      <input type="text" class="form-control" id="frequency" placeholder="Frequency (min)" name="frequency">
+					    </div>
+					    <div class="form-group">
+					      <label for="firstTime">First Train Time (hh:mm - military time) </label>
+					      <input type="text" class="form-control" id="firstTime" placeholder="First Train Time (hh:mm - military time) " name="firstTime">
+					    </div>
+					    
+					    
+					    <button type="submit"  id="submit" class="btn btn-info">Submit</button>
+			    </form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
